@@ -4,9 +4,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+
 import { UserModule } from './user/user.module';
-import { ToDoModule } from './to-do/to-do.module';
+
 import { AuthModule } from './auth/auth.module';
 import { CrModule } from './cr/cr.module';
 
@@ -41,7 +41,6 @@ import { CrModule } from './cr/cr.module';
       })
     }),
     UserModule,
-    ToDoModule ,
     AuthModule,
     CrModule,
   ],

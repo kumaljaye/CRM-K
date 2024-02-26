@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { CanActivate, ExecutionContext } from "@nestjs/common";
 import { Observable } from "rxjs";
 import {Request} from "express";

@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Cr } from "src/cr/entities/cr.entity";
-import { Todo } from "src/to-do/entities/to-do.entity";
+
 
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
@@ -30,6 +30,5 @@ export class User {
     @OneToMany(()=> Cr ,  (cr)=>cr.user)
     crs : Cr[];
 
-    @OneToMany(()=> Todo ,  (todo)=>todo.user)
-    todos : Todo[];
+
 }
