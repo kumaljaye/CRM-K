@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 const CompletedCrs = () => {
   return (
-    <div>CompletedCrs</div>
+    <div>
+      <NavBar></NavBar>
+      CompletedCrs</div>
   )
 }
 
